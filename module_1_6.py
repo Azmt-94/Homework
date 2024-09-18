@@ -2,7 +2,7 @@ my_dict = {'Adrian': 1993, 'Brian': 1994, 'Carl': 1995}
 print  ("Dict:",my_dict,
         '\n'"Existing value:", my_dict.get('Carl'),
         '\n' "Not existing value:", my_dict.get ("Anna"))
-del my_dict['Brian']
+my_dict.pop('Brian',1994)
 print ("Deleted value: 1994")
 my_dict.update({'Anna': 1996,
                'Scott': 1997})
